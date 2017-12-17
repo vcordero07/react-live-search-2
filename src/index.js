@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LiveSearch from './components/live-search';
 import './index.css';
-import App from './App';
+import peaks from './peaks.json';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <LiveSearch characters={peaks} />,
+  document.getElementById('root')
+);
